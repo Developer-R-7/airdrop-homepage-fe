@@ -23,3 +23,14 @@ export const createUser = async (data: any) => {
     return { sucess: false };
   }
 };
+
+export const getCompany = async () => {
+  try {
+    const response = await axios.get(`${API}/api/company/airdrop/ongoing`);
+    return response.data;
+  } catch (err: any) {
+    console.log("Create User Error");
+    console.log(err.message);
+    return { sucess: false };
+  }
+};
