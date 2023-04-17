@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "https://airdrop-be-production.up.railway.app";
+const API = "http://localhost:5050";
 
 export const validateAddress = async (wallet: `0x${string}` | undefined) => {
   try {
@@ -8,6 +8,17 @@ export const validateAddress = async (wallet: `0x${string}` | undefined) => {
     return data.data;
   } catch (err: any) {
     console.log("Validate Address Error");
+    console.log(err.message);
+    return { sucess: false };
+  }
+};
+
+export const createUser = async (data: any) => {
+  try {
+    const response = await axios.post(`${API}/api/user/`, data);
+    return response.data;
+  } catch (err: any) {
+    console.log("Create User Error");
     console.log(err.message);
     return { sucess: false };
   }
