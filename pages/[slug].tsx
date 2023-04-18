@@ -3,7 +3,10 @@ import Card from "@/components/Task/card";
 import Image from "next/image";
 import { getCompany } from "@/services/apiservices";
 import React, { useEffect, useState } from "react";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { enrollUser } from "@/services/apiservices";
+import { getAccount } from "@wagmi/core";
 
 import { AiOutlineSearch } from "react-icons/ai";
 
@@ -76,6 +79,26 @@ const Task = () => {
       }
     });
   }, []);
+
+  const account = getAccount();
+
+  const handleEnroll = () => {
+    setTimeout(
+      () =>
+        toast.success("Yay! You have been enrolled", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        }),
+      2000
+    );
+  };
+
   return (
     <div className=" w-full h-full bg-slategrey text-white">
       <Navbar />
@@ -99,7 +122,24 @@ const Task = () => {
             <div className=" w-3/5">
               <div className=" text-4xl font-medium">{data.display_name}</div>
               <div className="">{data.description}</div>
-              <div></div>
+              <div
+                className=" px-4 py-2 mt-2 rounded-xl bg-lightteal hover:bg-cyan-900 w-fit"
+                onClick={handleEnroll}
+              >
+                Enroll Now
+              </div>
+              <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+              />
             </div>
           </div>
           <div className="flex flex-col gap-2 mt-6">

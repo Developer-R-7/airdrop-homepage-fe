@@ -1,38 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Airdrop
 
-## Getting Started
+### What is Airdrop ?
 
-First, run the development server:
+A cryptocurrency airdrop is a marketing strategy that involves sending coins or tokens to wallet addresses. Small amounts of the new virtual currency are sent to the wallets of active members of the blockchain community for free or in return for a small service, such as retweeting a post sent by the company issuing the currency. The ultimate goal of a crypto airdrop is to promote awareness and circulation of a new token or coin.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Our Project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Airdrop Interface is a platform designed to bridge the gap between users and community managers in the web3 space, streamlining the airdrop process and ensuring that both parties benefit from the experience. Our platform is user-friendly and offers a variety of features to make managing and participating in airdrops efficient and effective.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Key Features
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- _Airdrop Management_: Airdrop Interface provides a seamless way for community managers to list potential airdrops, allowing users to enroll and complete tasks to qualify for airdrops.
+- _Task Completion_: Users can complete tasks such as following on Twitter, joining Discord, and meeting on-chain transaction thresholds set by the company to qualify for airdrops.
+- _Admin Panel_: The admin panel allows admins to monitor users, whitelist or reject them based on their profiles and task completions, and manage ongoing airdrops.
+- _Automated Whitelisting_: Airdrop Interface reduces the workload on community managers by automating the whitelisting of users who complete the required tasks, ensuring that only valid users are approved.
+- _Subscription-Based Payment Model_: Airdrop Interface utilizes the Coinbase payment gateway for its subscription-based payment model.
+  Airdrop Discovery: Users can easily view upcoming community airdrops and learn how to participate, enabling them to receive airdrops and helping the community gain popularity.
+- _Cross-Chain Chatroom_: Our platform features a cross-chain chat room using the router protocol, allowing users to interact with others from different blockchains (e.g., Ethereum and Flow).
+- _Clear Communication_: Airdrop Interface fosters transparent communication between users and community managers, streamlining the airdrop process and making it more accessible to users.
+  Getting Started
+- _Push Notification_: Once a user enroll's for an airdrop they will recieve notifications reminding to complete the tasks.
+- _Users_: Explore the list of potential airdrops available on the portal.Enroll in airdrops by completing the required tasks specified by the community. Track your progress and airdrop status from the user dashboard. Receive updates on new community airdrops and learn how to participate.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Sephron
+- Router Protocol
+- Candence
+- AWS
+- MERN
