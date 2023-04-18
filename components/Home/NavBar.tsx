@@ -2,7 +2,7 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import React, { useState, useEffect } from "react";
 import { useAccount } from "wagmi";
 import Modal from "./Modal";
-import { validateAddress, createUser } from "../services/apiservices";
+import { validateAddress, createUser } from "@/services/apiservices";
 
 export default function NavBar() {
   const [show, setShow] = useState(false);
