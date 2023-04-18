@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5050";
+const API = "https://airdrop-be-production.up.railway.app";
 
 export const validateAddress = async (wallet: `0x${string}` | undefined) => {
   try {

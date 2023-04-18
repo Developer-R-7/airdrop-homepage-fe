@@ -14,9 +14,9 @@ const Card = (tasks: task) => {
         <div>{tasks.task_description}</div>
       </div>
       <Modal isVisible={showModal} onClose={() => setshowModal(false)}>
-        <div>
+        <div className="flex flex-col gap-3">
           <div className=" text-3xl font-medium">{tasks.task_title}</div>
-          <div></div>
+          <div>{tasks.task_description}</div>
         </div>
       </Modal>
     </Fragment>
