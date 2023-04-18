@@ -1,4 +1,6 @@
 import { FiLink } from "react-icons/fi";
+import { useAccount } from "wagmi";
+import { enrollUser } from "../services/apiservices";
 
 export type cmp_details = {
   display_name: string;
@@ -26,7 +28,18 @@ const Card = ({
   display_name,
   company_description,
   company_website,
+  _id,
 }: forCard) => {
+  const { address } = useAccount();
+
+  const handleEnrollUser = async () => {
+    const res = await enrollUser({
+      wallet_address: address,
+      company_id: _id,
+    });
+    console.log(res);
+  };
+
   return (
     <div className="flex flex-col mr-10 p-4 bg-primary-pink border-primary-text bg-opacity-30 border-2 rounded-xl w-1/3 gap-3 h-[250px]">
       <div className="flex gap-2">
@@ -40,10 +53,16 @@ const Card = ({
         <div className=" text-3xl font-semibold">{display_name}</div>
       </div>
       <div className=" text-neutral-400">{company_description}</div>
-      <div className=" w-fit bg-neutral-700 p-2 rounded-lg">
-        <a href={`${company_website}`}>
-          <FiLink />
+      <div className=" w-full justify-between p-2 rounded-lg flex items-center">
+        <a className="bg-neutral-700 p-2 rounded" href={`${company_website}`}>
+          <FiLink size={20} />
         </a>
+        <button
+          onClick={handleEnrollUser}
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          View
+        </button>
       </div>
     </div>
   );

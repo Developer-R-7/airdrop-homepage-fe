@@ -12,6 +12,7 @@ export default function HeroSection() {
   useEffect(() => {
     getCompany().then((res) => {
       if (res.success) {
+        console.log(res.company);
         setData(res.company);
       } else {
         console.log(res); //error
@@ -50,6 +51,7 @@ export default function HeroSection() {
               display_name={item.display_name}
               company_description={item.description}
               company_website={item.website}
+              _id={item._id}
             />
           ))}
         </div>
