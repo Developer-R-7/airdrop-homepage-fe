@@ -44,7 +44,7 @@ const Card = ({
 
   return (
     <Link href={`/${display_name}`} className="w-1/3">
-      <div className="flex flex-col mt-4 mr-10 p-4 bg-primary-pink border-primary-text bg-opacity-30 border-2 rounded-xl  gap-3 h-[250px]">
+      <div className="flex flex-col mt-4 mr-10 p-4 bg-primary-pink border-primary-text bg-opacity-30 border-2 rounded-xl  gap-3 ">
         <div className="flex gap-2">
           <div className=" w-10 h-10">
             <img
