@@ -34,3 +34,14 @@ export const getCompany = async () => {
     return { sucess: false };
   }
 };
+
+export const enrollUser = async (data) => {
+  try {
+    const response = await axios.post(`${API}/api/user/enroll`, data);
+    return response.data;
+  } catch (err: any) {
+    console.log("enroll User Error");
+    console.log(err.message);
+    return { sucess: false };
+  }
+};
