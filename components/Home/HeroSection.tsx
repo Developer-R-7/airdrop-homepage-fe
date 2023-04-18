@@ -3,7 +3,7 @@ import Card from "./Card";
 import MainHero from "./MainHero";
 import NavBar from "./NavBar";
 import StatCard from "./StatCard";
-import { getCompany } from "../services/apiservices";
+import { getCompany } from "@/services/apiservices";
 import { toast } from "react-toastify";
 
 export default function HeroSection() {
