@@ -2,9 +2,11 @@
 
 ### What is Airdrop ?
 
+
 A cryptocurrency airdrop is a marketing strategy that involves sending coins or tokens to wallet addresses. Small amounts of the new virtual currency are sent to the wallets of active members of the blockchain community for free or in return for a small service, such as retweeting a post sent by the company issuing the currency. The ultimate goal of a crypto airdrop is to promote awareness and circulation of a new token or coin.
 
 ### Our Project
+![2](https://user-images.githubusercontent.com/60516398/232771265-d75e40f0-5317-4d70-a8c5-cbfe052400b6.png)
 
 Airdrop Interface is a platform designed to bridge the gap between users and community managers in the web3 space, streamlining the airdrop process and ensuring that both parties benefit from the experience. Our platform is user-friendly and offers a variety of features to make managing and participating in airdrops efficient and effective.
 
@@ -21,6 +23,8 @@ Airdrop Interface is a platform designed to bridge the gap between users and com
   Getting Started
 - _Push Notification_: Once a user enroll's for an airdrop they will recieve notifications reminding to complete the tasks.
 - _Users_: Explore the list of potential airdrops available on the portal.Enroll in airdrops by completing the required tasks specified by the community. Track your progress and airdrop status from the user dashboard. Receive updates on new community airdrops and learn how to participate.
+
+![1](https://user-images.githubusercontent.com/60516398/232771624-134ef1d2-5412-424c-a84b-3c31e931dfec.png)
 
 ### Tech Stack
 
