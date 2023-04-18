@@ -1,6 +1,6 @@
 import { FiLink } from "react-icons/fi";
 import { useAccount } from "wagmi";
-import { enrollUser } from "../services/apiservices";
+import { enrollUser } from "../../services/apiservices";
 
 export type cmp_details = {
   display_name: string;
