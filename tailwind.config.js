@@ -15,6 +15,9 @@ module.exports = {
       colors: {
         slategrey: "#02161E ",
         darkteal: "#002431 ",
+        lightteal: "#013746",
+        customorange: "#FE8A1D ",
+        lightblue: "#87A5B7",
       },
     },
   },
