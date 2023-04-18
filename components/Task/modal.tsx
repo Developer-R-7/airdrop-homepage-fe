@@ -16,7 +16,7 @@ const Modal = ({ isVisible, onClose, children }: ModalProps) => {
       onClick={handleClose}
       id="wrapper"
     >
-      <div className=" w-1/2 h-1/2">
+      <div className=" w-1/4 h-2/5">
         <div className=" bg-slategrey text-white py-8 px-6 rounded-lg h-full">
           {children}
         </div>

@@ -10,6 +10,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 export type task = {
   task_title: string;
   task_description: String;
+  task_button: string;
 };
 
 type cmptype = {
@@ -76,7 +77,7 @@ const Task = () => {
     });
   }, []);
   return (
-    <div className=" w-screen h-screen bg-slategrey text-white">
+    <div className=" w-full h-full bg-slategrey text-white">
       <Navbar />
       <div className="flex">
         <div className=" w-20 flex justify-center border-r-2 pt-3 h-screen border-lightblue">
@@ -107,10 +108,12 @@ const Task = () => {
               <Card
                 task_description="Click this link to follow on twitter"
                 task_title="Follow on Twitter"
+                task_button="Connect Twitter"
               />
               <Card
                 task_description="This some random text to see if it fits inside the box"
                 task_title="Join Discord Server"
+                task_button="Connect on Discord"
               />
             </div>
           </div>
