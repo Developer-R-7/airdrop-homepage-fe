@@ -80,7 +80,7 @@ const Task = () => {
     <div className=" w-full h-full bg-slategrey text-white">
       <Navbar />
       <div className="flex">
-        <div className=" w-20 flex justify-center border-r-2 pt-3 h-screen border-lightblue">
+        <div className=" w-32 flex justify-center border-r-2 pt-3 h-screen border-lightblue">
           <div className=" p-3 bg-customorange rounded-lg w-fit h-fit">
             <AiOutlineSearch />
           </div>
@@ -91,8 +91,8 @@ const Task = () => {
               <Image
                 src="/cmp-img.svg"
                 alt="cat"
-                width="200"
-                height="200"
+                width="400"
+                height="400"
                 className=" rounded-xl"
               />
             </div>
