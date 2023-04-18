@@ -7,7 +7,7 @@ import { statCardSchema } from "@/shared/schemas";
 
 export default function StatCard(props: statCardSchema) {
   return (
-    <div className="flex m-10 flex-col p-6 w-1/3 rounded-md bg-secondary">
+    <div className="flex m-10 flex-col p-6 w-1/3 rounded-md bg-secondary text-white">
       <div className="flex flex-row">
         <div className=" flex-col w-1/2">
           <p className="text-xl ">{props.title}</p>
