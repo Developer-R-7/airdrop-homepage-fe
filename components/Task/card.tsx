@@ -18,7 +18,7 @@ const Card = (tasks: task) => {
         <div className="flex flex-col gap-3">
           <div className=" text-3xl font-medium">{tasks.task_title}</div>
           <div>{tasks.task_description}</div>
-          <div className=" w-full flex items-center justify-center gap-3 border-2 rounded-lg border-sky-400 p-2">
+          <div className=" w-full flex items-center justify-center gap-3 border-2 rounded-lg border-sky-400 p-2 hover:bg-sky-400 ">
             {tasks.task_button}
           </div>
         </div>

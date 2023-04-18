@@ -29,8 +29,8 @@ export default function HeroSection() {
           <div className="container h-auto w-auto mx-auto">
             <MainHero />
           </div>
-          <div className="container mx-auto my-auto mt-12">
-            <div className="flex flex-row p-6 justify-between mx-auto">
+          <div className="container mx-auto my-auto mt-12 ">
+            <div className="flex flex-row p-6 justify-between">
               <StatCard title="Users" value={400} icon="user" />
               <StatCard title="Commuities" value={500} icon="graph" />
               <StatCard title="Potenial Airdrop" value={10} icon="airdrop" />
