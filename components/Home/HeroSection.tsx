@@ -45,7 +45,7 @@ export default function HeroSection() {
       </div>
       <div className="container mx-auto my-auto mt-12">
         <div className="flex flex-row p-6 justify-between">
-          {data.map((item, idx) => (
+          {data.map((item: any, idx) => (
             <Card
               key={idx}
               display_name={item.display_name}

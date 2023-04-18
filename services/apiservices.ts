@@ -35,7 +35,7 @@ export const getCompany = async () => {
   }
 };
 
-export const enrollUser = async (data) => {
+export const enrollUser = async (data: any) => {
   try {
     const response = await axios.post(`${API}/api/user/enroll`, data);
     return response.data;

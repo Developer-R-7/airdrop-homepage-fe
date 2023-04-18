@@ -22,7 +22,7 @@ export default function NavBar() {
     }
   };
 
-  const onCreate = async (data) => {
+  const onCreate = async (data: any) => {
     const res = await createUser({ ...data, wallet_address: address });
     if (res) setShow(false);
   };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Modal = ({ onSave }) => {
+const Modal = ({ onSave }: any) => {
   const [form, setForm] = useState({
     name: "",
     email: "",

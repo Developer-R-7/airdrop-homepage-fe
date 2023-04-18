@@ -22,6 +22,7 @@ type forCard = {
   display_name: string;
   company_description: string;
   company_website: string;
+  _id: string;
 };
 
 const Card = ({

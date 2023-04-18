@@ -59,7 +59,10 @@ let something: data = {
 };
 
 const Task = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({
+    display_name: "",
+    description: "",
+  });
 
   useEffect(() => {
     getCompany().then((res) => {
